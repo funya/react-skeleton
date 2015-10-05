@@ -1,0 +1,24 @@
+{
+  "name": "project-name",
+  "version": "0.0.1",
+  "description": "Project Description",
+  "author": "Author",
+  "repository": "Private",
+  "license": "UNLICENSED",
+  "readme": "`npm install` to build bundle.js for prod. `npm start` to build a dev version of bundle.js automatically on file changes.",
+  "dependencies": {
+    "react": "0.14.0-rc1",
+    "react-dom": "0.14.0-rc1"
+  },
+  "devDependencies": {
+    "flux": "",
+    "webpack": "",
+    "babel": "",
+    "babel-core": "",
+    "babel-loader": ""
+  },
+  "scripts": {
+    "prepublish": "./node_modules/.bin/webpack --progress --config webpack.prod.js",
+    "start": "./node_modules/.bin/webpack --devtool=eval-sourcemap -w --progress --colors"
+  }
+}
